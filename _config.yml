@@ -1,9 +1,8 @@
 # Site settings 配置站点
-title: '魔鬼李的博客'
-description: '我是一个热爱编程但是又不会编程的人，建这个小破站是为了写一些自己的生活和学习经历，感谢你可以看到这里！'
-keyword: 'demon, demon's home, 魔鬼李的博客, VR, 虚拟现实, Unity, Linux, 结构设计, 设计'
-url: '' 
-# your host
+title: '廖柯宇的独立博客'
+description: '昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
+keyword: '廖柯宇, 廖柯宇的独立博客, 廖柯宇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
+url: '' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
@@ -22,12 +21,12 @@ nav:
 
 # Footer
 footer:
-  since: 2020
+  since: 2017
 
 # Author 配置博主信息
-author: '魔鬼李'
-nickname: '魔鬼李'
-bio: 'we love coding，热爱技术设计，简单乐观爱创造'
+author: '廖柯宇'
+nickname: '悟空'
+bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -57,10 +56,10 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
-#  weibo: '//weibo.com/lovecolcol'
-#  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
-#  instagram: '//www.instagram.com/steveliaocn'
-   github: '//github.com/demonljt'
+  weibo: '//weibo.com/lovecolcol'
+  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
+  instagram: '//www.instagram.com/steveliaocn'
+  github: '//github.com/kaeyleo'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
