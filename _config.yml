@@ -28,7 +28,7 @@ footer:
 # Author 配置博主信息
 author: '魔鬼李'
 nickname: '魔鬼李'
-bio: 'we love coding，热爱技术&设计，简单乐观爱创造'
+bio: 'we love coding，热爱技术设计，简单乐观爱创造'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -61,7 +61,7 @@ sns:
 #  weibo: '//weibo.com/lovecolcol'
 #  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
 #  instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/demonljt'
+   github: '//github.com/demonljt'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar
