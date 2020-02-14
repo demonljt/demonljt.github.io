@@ -45,12 +45,12 @@ tags: wordpress jekyll 博客 初衷 历程
 
 这个网上有很多教程，我这里就不多赘述了，推荐[买辣条](https://post.smzdm.com/p/228886/)大神的博文。附上我做的网站的美图：
 
-![wordpress个人网站](https://github.com/demonljt/demonljt.github.io/blob/master/assets/img/2020-02-14-create-my-first-blog/1.png)
+![wordpress个人网站](https://github.com/demonljt/demonljt.github.io/blob/master/assets/img/2020-02-14-create-my-first-blog-1.png)
 
 
 那为什么还要做github版的个人网站呢？Markdown已经越来越流行，作为最流行的博客程序——WordPress，虽然没有原生支持，但是有丰富的插件让WordPress支持Markdown。当然了我想用markdown来编辑博文不是最主要的原因，更重要的是wordpress网站的配置已经花了我两天时间，并且我的旧手机换一次WiFi，IP地址变一次（即使使用了静态IP），所以旧手机作为服务器来配置个人博客来说，现在的处理器性能是足够的，所需要的就是一个稳定的网络环境，就是简单的并发访问的话手机所耗费的电量也仅仅是待机电量多一点点。想要外网也能访问的话，就需要有一个域名和外网IP，这个有很多方法获取，鉴于我现在焦躁的心情，这些就先不做了，在此说明，截止写稿我的旧手机做服务器已经稳定运行了好多天，即使熄屏情况下也可以得到很好的访问速度，这得益于我对手机的设置和仅仅是局域网的访问，以及网页并不复杂。
 
-![美图镇楼](https://github.com/demonljt/demonljt.github.io/blob/master/assets/img/2020-02-14-create-my-first-blog/2.png)  
+![美图镇楼](https://github.com/demonljt/demonljt.github.io/blob/master/assets/img/2020-02-14-create-my-first-blog-2.jpg)  
 说了这么多，最后又做了github的博客，正所谓前人栽树，后人乘凉。感谢[廖柯宇](http://liaokeyu.com/)大神的模板，在选好[Jekyll主题](http://jekyllthemes.org/)后发现大神做的正和我心意，和我在旧手机上做的相差无几，接下来就是基于模板的修改，虽然已经做的很完善了，但是我还是想做一点属于自己的不一样的东西，于是修改了最容易看出来的顶部图片等，就有了现在的样子，具体过程后面会再有一篇博文来说明和介绍怎么美化主题。
 
 # 总结  
@@ -61,12 +61,3 @@ tags: wordpress jekyll 博客 初衷 历程
 ┃　　　　　　毕业证　　　　　　 ┃  
 ㊣━━^-^o中华人民共和国o^-^━━㊣
 
-
-．．↖．．↖．．↑．．↗．．↗．．↖．．↖．．↑．．↗．．↗．．
-．　　　．　　／█＼　　　　　　　　　　　　／█＼．　　．
-　．　　　　／｜█｜＼　　灌水太多了吗　　／｜█｜＼．　．　．
-．　．　．／｜｜█｜｜＼　　　盖座桥　　／｜｜█｜｜＼　　．
-　．　．／｜｜｜█｜｜｜＼　方便些　　／｜｜｜█｜｜｜＼．　．
-．　．／｜｜｜｜█｜｜｜｜＼　　　　／｜｜｜｜█｜｜｜｜＼　　．
-█████████████████████████████████
-　█　　　　　　　　　　　　　█　　　　　　　　　　　　　　　█
