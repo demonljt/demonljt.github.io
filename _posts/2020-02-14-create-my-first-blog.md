@@ -4,7 +4,7 @@ title: '创建我的个人博客网页'
 subtitle: '作为博客的第一篇文章吧'
 date: 2020-02-14
 categories: 记录
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
+cover: 'https://note.youdao.com/yws/api/personal/file/0B53F6F874A44209AF6A0F3F49488399?method=download&shareKey=01aa2c14b320831dae209c01cbf8b797'
 tags: wordpress jekyll 博客 初衷 历程
 ---
 
