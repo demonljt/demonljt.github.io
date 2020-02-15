@@ -144,6 +144,7 @@
     })();
   </script>
   {% endif %}
+
   {% if site.comments.gitalk %}
     <script>
         var gitalk = new Gitalk({
@@ -159,6 +160,7 @@
             gitalk.render('disqus_thread')
     </script>
   {% endif %}
+  
   <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
 </body>
