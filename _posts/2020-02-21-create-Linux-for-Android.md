@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '旧安卓手机的利用-搭建Linux系统和个人网站'
-subtitle: '利用旧手机记录日常，学习Linux'
+title: '旧安卓手机的利用-搭建Linux系统和个人网站 安卓装Linux ，坑真的多，Linux deploy&Termux踩坑记'
+subtitle: '在旧手机上建立自己的服务器（1）||2020年新货'
 date: 2020-02-21
 categories: 记录
 cover: 'https://images.pexels.com/photos/3730403/pexels-photo-3730403.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
