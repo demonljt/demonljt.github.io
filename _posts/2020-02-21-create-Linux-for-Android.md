@@ -4,7 +4,7 @@ title: '旧安卓手机的利用-搭建Linux系统和个人网站'
 subtitle: '利用旧手机记录日常，学习Linux'
 date: 2020-02-21
 categories: 记录
-cover: 'https://note.youdao.com/yws/api/personal/file/0B53F6F874A44209AF6A0F3F49488399?method=download&shareKey=01aa2c14b320831dae209c01cbf8b797'
+cover: 'https://images.pexels.com/photos/3730403/pexels-photo-3730403.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
 tags: Linux_deploy  ubuntu Linux 旧手机
 ---
 
