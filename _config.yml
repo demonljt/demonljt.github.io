@@ -37,6 +37,7 @@ nightMode: false
 
 # Comments 评论功能
 comments:
+ intensedebate_comments: true
 
  disqus: false
  disqus_url: 'https://liaokeyu.disqus.com/embed.js'

@@ -31,7 +31,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main rest
 { color: black }
 ```
 
-1. 安装nginx，php，mysql，可以一次性输入安装命令，这里不指定版本，因为软件更新的原因会有错误，需要注意的是需要关注安装软件的版本。
+安装nginx，php，mysql，可以一次性输入安装命令，这里不指定版本，因为软件更新的原因会有错误，需要注意的是需要关注安装软件的版本。
 ```C-like
 apt-get install nginx php-fpm mysql-server php-mysql
 ```
