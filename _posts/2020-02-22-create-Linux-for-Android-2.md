@@ -14,7 +14,7 @@ tags: Linux_deploy  ubuntu Linux 旧手机 wordpress
 根据[大佬](https://post.smzdm.com/p/228886/)的博文安装时会出现以下情况网站搜索无果，全是让改软件源的，改完后问题依然，其实分析后可知，无法定位就是源里面没有软件或者源错误，所以 这里不指定版本安装。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222125759883.png)
 这里附上清华的软件源，仅适用于ubuntu bionic for arm64/armhf。
-```
+```C-like
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic main restricted universe multiverse
@@ -31,11 +31,11 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main rest
 ```
 
 1. 安装nginx，php，mysql，可以一次性输入安装命令，这里不指定版本，因为软件更新的原因会有错误，需要注意的是需要关注安装软件的版本。
-```
+```C-like
 apt-get install nginx php-fpm mysql-server php-mysql
 ```
 如果安装过程中出现以下情况
-```
+```C-like
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
 #apt-add-repository：找不到命令
 错误。
@@ -44,13 +44,13 @@ apt-get install software-properties-common
 重新执行命令即可。
 ```
 装完之后启动服务
-```
+```C-like
 service nginx start
 
 service php7.2-fpm start
 ```
 service mysql start #当MySQL启动失败时，可以输入以下命令后再次输入启动mysql的命令
-```
+```C-like
 usermod -a -G aid_net_raw mysql 
 ```
 然后配置一下nginx的配置文件,先看一下php-fpm的配置文件。nginx处理请求是通过fpm（来管理fastcgi的）来实现请求和响应。而nginx和php-fpm可以通过监听9000端口（默认）或者socket来实现。而9000的格式是127.0.0.1:9000，是走网络的。通过ngxin的conf文件，把.php结尾的都交给9000端口处理，php-fpm（fastggi的进程管理器）选择并连接到一个fastcgi子进程，并将环境变量和标准输入发送到fastcgi子进程，然后不断的处理请求响应socket文件就不走网络，是套接字。  
@@ -60,7 +60,7 @@ vim/etc/nginx/sites-available/default #修改两个，增加一个index.php格�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222130711965.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
 然后重启以下项,出现OK字样表示成功。  
-```
+```C-like
 service nginx reload
 service php7-fpm reload
 ```
@@ -70,7 +70,7 @@ service php7-fpm reload
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153151177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)  
 # 方案二
 安装宝塔界面后，一键配置LNPM环境，一键部署wordpress。ubuntu安装命令为  
-```
+```C-like
 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
 ```
 其他系统请参考<https://www.bt.cn/bbs/thread-19376-1-1.html>  

@@ -54,27 +54,27 @@ termux有两个官方下载途径因为众所周知的缘故，大多可以从[F
 ## 方案一：最简单
 当然就是Linux deploy自带的配置是需要做出选择的桌面了。我在尝试后还是推荐这种方式，其他方式安装的桌面会出现文件目录挂载不正确的情况 。这时候就需要有一定的技术去做软连接，对于新手有一定的难度（大神请自动略过）。
 ## 方案二：安装gnome桌面
-```
+```C-like
 sudo apt-get install gnome-core
 ```
 安装vnc
-```
+```C-like
 sudo apt-get install vnc4server
 ```
 启动vnc
-```
+```C-like
 vncserver
 ```
 <font color="green">设置一下密码</font>
 
 接着设置一下配置文件
-```
+```C-like
 vim ~/.vnc/xstartup
 ```
 修改为
 
 复制代码
-```
+```C-like
 #!/bin/sh
 
 # Uncomment the following two lines for normal desktop:
@@ -95,7 +95,7 @@ nautilus &
 ```
 复制代码
 然后重启vnc
-```
+```C-like
 vncserver -kill :1 //关闭
 
 vncserver :1　　　　//开启
@@ -107,7 +107,7 @@ vncserver :1　　　　//开启
 如果出现桌面是灰色的现象，尝试一下下面的方法
 
 解决灰色桌面问题：
-```
+```C-like
 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
 ```
 原因是gnome有些组件没有装上  
@@ -123,16 +123,16 @@ And more
 
 
 例行升级
-```
+```C-like
 sudo apt-get update
 sudo apt-get upgrade -y
 ```
 安装桌面工具
-```
+```C-like
 sudo apt-get install tasksel -y
 ```
 运行工具
-```
+```C-like
 sudo tasksel
 ```
 将打开一个基于curses的GUI。使用键盘箭头键，向下滚动以选择Ubuntu desktop.选择Ubuntu桌面进行安装。

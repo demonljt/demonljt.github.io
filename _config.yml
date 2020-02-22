@@ -37,8 +37,8 @@ nightMode: false
 
 # Comments 评论功能
 comments:
-  disqus: false
-  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  #disqus: false
+  #disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
   gitalk: true
   gitalk_clientID: 'b45ae3eac5990ebebd26'
