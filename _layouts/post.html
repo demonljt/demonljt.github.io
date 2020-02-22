@@ -50,6 +50,12 @@
     {% endif %}
   </div>
 
+  
+  {% if site.intensedebate_comments %}
+   {% include intensedebate-comments.html %}
+  {% endif %}  
+
+
   <section class="author-detail">
     <section class="post-footer-item author-card">
       <div class="avatar">
@@ -160,10 +166,6 @@
             gitalk.render('disqus_thread')
     </script>
   {% endif %}
-
-  {% if site.intensedebate_comments %}
-   {% include intensedebate-comments.html %}
-  {% endif %}  
 
 
   <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
