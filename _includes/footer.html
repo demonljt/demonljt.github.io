@@ -9,7 +9,6 @@
   {{ current }}
   </section>
   <section>由 <a href="//jekyllrb.com">Jekyll</a>强力驱动 | <a href="//demonljt.github.io">We love life</a> | <span id="busuanzi_container_site_pv">你们来看我<span id="busuanzi_value_site_pv"></span>次</span> | <p>博客稳定运行<span style="color: orange;" id="sitetime"></span></p></section> 
-  <section>我已经码了{{ content | strip_html | strip_newlines | split: "" | size }}中文 | {{ page.content | number_of_words }}英文</section>
 </footer>
   
  <script language=javascript>  
@@ -28,7 +27,7 @@
  var todayMinute = today.getMinutes()  
  var todaySecond = today.getSeconds()  
  /* 修改下面的t1数值为网站建成时间（年，月，日，时，分，秒）*/  
- var t1 = Date.UTC(2020,2,14,5,20,13)  
+ var t1 = Date.UTC(2020,02,14,05,20,13)  
  var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)  
  var diff = t2-t1  
  var diffYears = Math.floor(diff/years)  
