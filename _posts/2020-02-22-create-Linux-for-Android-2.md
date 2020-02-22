@@ -45,9 +45,9 @@ apt-get install software-properties-common
 重新执行命令即可。
 ```
 装完之后启动服务
+
 ```C-like
 service nginx start
-
 service php7.2-fpm start
 ```
 service mysql start #当MySQL启动失败时，可以输入以下命令后再次输入启动mysql的命令
