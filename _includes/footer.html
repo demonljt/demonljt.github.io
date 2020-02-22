@@ -8,34 +8,44 @@
   {% endunless %}
   {{ current }}
   </section>
-  <section>由 <a href="//jekyllrb.com">Jekyll</a>强力驱动 | <a href="//demonljt.github.io">We love life</a> | <span id="busuanzi_container_site_pv">你们来看我<span id="busuanzi_value_site_pv"></span>次</span> | <p>博客稳定运行<span style="color: orange;" id="sitetime"></span></p></section> 
+  <section>由 <a href="//jekyllrb.com">Jekyll</a>强力驱动 | <a href="//demonljt.github.io">We love life</a> | <span id="busuanzi_container_site_pv">你们来看我<span id="busuanzi_value_site_pv"></span>次</span> | <span id="htmer_time" /></section> 
 </footer>
   
-<script language=javascript>  
-  function siteTime(){  
-  window.setTimeout("siteTime()", 1000);  
-  var seconds = 1000  
-  var minutes = seconds * 60  
-  var hours = minutes * 60  
-  var days = hours * 24  
-  var years = days * 365  
-  var today = new Date()  
-  var todayYear = today.getFullYear()  
-  var todayMonth = today.getMonth()  
-  var todayDate = today.getDate()  
-  var todayHour = today.getHours()  
-  var todayMinute = today.getMinutes()  
-  var todaySecond = today.getSeconds()  
-  /* 修改下面的t1数值为网站建成时间（年，月，日，时，分，秒）*/  
-  var t1 = Date.UTC(2020,2,14,0,0,0)  
-  var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)  
-  var diff = t2-t1  
-  var diffYears = Math.floor(diff/years)  
-  var diffDays = Math.floor((diff/days)-diffYears*365)  
-  var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours)  
-  var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)  
-  var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)  
-  document.getElementById('sitetime').innerHTML = diffYears +' 年 '+ diffDays + ' 天 ' + diffHours + ' 小时 ' + diffMinutes + ' 分钟 ' + diffSeconds + ' 秒'  
-  }  
-  siteTime()  
-  </script>  
+<script>
+  function secondToDate(second) {
+      if (!second) {
+          return 0;
+      }
+      var time = new Array(0, 0, 0, 0, 0);
+      if (second >= 365 * 24 * 3600) {
+          time[0] = parseInt(second / (365 * 24 * 3600));
+          second %= 365 * 24 * 3600;
+      }
+      if (second >= 24 * 3600) {
+          time[1] = parseInt(second / (24 * 3600));
+          second %= 24 * 3600;
+      }
+      if (second >= 3600) {
+          time[2] = parseInt(second / 3600);
+          second %= 3600;
+      }
+      if (second >= 60) {
+          time[3] = parseInt(second / 60);
+          second %= 60;
+      }
+      if (second > 0) {
+          time[4] = second;
+      }
+      return time;
+  }</script>
+<script type="text/javascript" language="javascript">
+  function setTime() {
+      var create_time = Math.round(new Date(Date.UTC(2020, 02, 13, 14, 5, 20)).getTime() / 1000);
+      var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+      currentTime = secondToDate((timestamp - create_time));
+      currentTimeHtml = 'Wyc‘s博客已经运行了：' + currentTime[0] + '年 ' + currentTime[1] + '天 '
+              + currentTime[2] + '时 ' + currentTime[3] + '分 ' + currentTime[4]
+              + '秒';
+      document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+  }    setInterval(setTime, 1000);
+</script>
