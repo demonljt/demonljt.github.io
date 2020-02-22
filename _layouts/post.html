@@ -36,7 +36,7 @@
   <div class="post-content visible">
     {% if page.subtitle %}
     <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-    <section>本文有{{ content | strip_html | strip_newlines | split: "" | size }}中文 | {{ page.content | number_of_words }}英文</section>
+    本文有{{ content | strip_html | strip_newlines | split: "" | size }}中文 | {{ page.content | number_of_words }}英文
     {% endif %}
     <article class="markdown-body">
       {{ page.content }}
