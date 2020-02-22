@@ -31,7 +31,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main rest
 ```
 
 1. 安装nginx，php，mysql，可以一次性输入安装命令，这里不指定版本，因为软件更新的原因会有错误，需要注意的是需要关注安装软件的版本。
-```bash
+```
 apt-get install nginx php-fpm mysql-server php-mysql
 ```
 如果安装过程中出现以下情况
@@ -44,13 +44,13 @@ apt-get install software-properties-common
 重新执行命令即可。
 ```
 装完之后启动服务
-```bash
+```
 service nginx start
 
 service php7.2-fpm start
 ```
 service mysql start #当MySQL启动失败时，可以输入以下命令后再次输入启动mysql的命令
-```bash
+```
 usermod -a -G aid_net_raw mysql 
 ```
 然后配置一下nginx的配置文件,先看一下php-fpm的配置文件。nginx处理请求是通过fpm（来管理fastcgi的）来实现请求和响应。而nginx和php-fpm可以通过监听9000端口（默认）或者socket来实现。而9000的格式是127.0.0.1:9000，是走网络的。通过ngxin的conf文件，把.php结尾的都交给9000端口处理，php-fpm（fastggi的进程管理器）选择并连接到一个fastcgi子进程，并将环境变量和标准输入发送到fastcgi子进程，然后不断的处理请求响应socket文件就不走网络，是套接字。  
@@ -60,7 +60,7 @@ vim/etc/nginx/sites-available/default #修改两个，增加一个index.php格�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222130711965.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
 然后重启以下项,出现OK字样表示成功。  
-```bash
+```
 service nginx reload
 service php7-fpm reload
 ```
@@ -70,14 +70,15 @@ service php7-fpm reload
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153151177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)  
 # 方案二
 安装宝塔界面后，一键配置LNPM环境，一键部署wordpress。ubuntu安装命令为  
-```bash
+```
 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
 ```
-其他系统请参考<https://www.bt.cn/bbs/thread-19376-1-1.html>
+其他系统请参考<https://www.bt.cn/bbs/thread-19376-1-1.html>  
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153404618.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
 下面即为宝塔的安装完成画面，其中Bt-Panel即为登录网址，如果是局域网本机登录换成localhost或者127.0.0.1。如果是电脑远程 登录 直接换成手机的外网IP。  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153417494.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153522458.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153437258.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153417494.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153522458.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153437258.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)  
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200222153448555.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
 在软件商店选择一键部署wordpress即可完成网站部署，当然这其中肯定有 很多问题，比如说安装完成后依然显示未安装。socket报错等。好像问题各种各样，你得做好折腾的准备。还有 安装成功 后 无法启动等问题。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020022215431142.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDIzNTAzMQ==,size_16,color_FFFFFF,t_70)
