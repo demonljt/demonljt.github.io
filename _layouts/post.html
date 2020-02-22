@@ -37,7 +37,7 @@
     {% if page.subtitle %}
     <h2 class="post-subtitle">{{ page.subtitle }}</h2>
     {% endif %}
-    <div><p>本文有{{ content | strip_html | strip_newlines | split: "" | size }}中文 | {{ page.content | number_of_words }}英文</p></div>
+    
     <article class="markdown-body">
       {{ page.content }}
     </article>
