@@ -35,7 +35,7 @@
 
   <div class="post-content visible">
     {% if page.subtitle %}
-    <h2 class="post-subtitle">{{ page.subtitle }} | <p>本页面有{{ content | strip_html | strip_newlines | split: "" | size }}中文 | {{ page.content | number_of_words }}英文</p></h2>
+    <h2 class="post-subtitle">{{ page.subtitle }} <p>本页面有{{ content | strip_html | strip_newlines | split: "" | size }}中文 | {{ page.content | number_of_words }}英文</p></h2>
     {% endif %}
     <article class="markdown-body">
       {{ page.content }}
@@ -57,7 +57,7 @@
               owner: '{{ site.comments.gitalk_owner }}',
               admin: '{{ site.comments.gitalk_admin }}',
               id: location.pathname,      // Ensure uniqueness and length less than 50{{ page.title }}
-              distractionFreeMode: '{{ site.comments.distractionFreeMode }}'  // Facebook-like distraction free mode
+              distractionFreeMode: '{{ true }}'  // Facebook-like distraction free mode
             })
             gitalk.render('gitalk-container')
     </script>
@@ -114,9 +114,6 @@
       {% endif %}
     </section>
   </section>
-
-
-    #{% include gitalk.html %}  //把&改成%,取消注释可开启gittalk
 
     
   {% include footer.html %}

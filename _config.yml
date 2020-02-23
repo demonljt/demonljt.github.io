@@ -43,7 +43,6 @@ comments:
  gitalk_repo: 'demonljt.github.io'
  gitalk_owner: 'demonljt'
  gitalk_admin: 'demonljt'
- distractionFreeMode: true
 
 
 # MathJax 公式支持 by Ray-Eldath
