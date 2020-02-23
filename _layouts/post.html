@@ -106,6 +106,15 @@
     </section>
     {% endif %}
     <!--增加引入comments的代码 -->
+    {% if site.gitalk_shortname %}
+    <section class="post-footer-item comment">
+      <h2 id="comments">评论</h2>
+      {% include comments.html %}
+    </section>
+    {% endif %}    
+  </section>
+
+  <section>
     {% if site.comments.gitalk %}
     <script>
         var gitalk = new Gitalk({
@@ -119,10 +128,9 @@
             })
             gitalk.render('gitalk_thread')
     </script>
-  {% endif %}
-  </section>
-
-    
+    {% endif %}
+  </section> 
+  
   {% include footer.html %}
   <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
