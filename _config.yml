@@ -43,12 +43,6 @@ comments:
  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
 
  gitalk: true
- gitalk_clientID: 'b45ae3eac5990ebebd26'
- gitalk_Secret: '6a2fae076e83420c2b94d735bf469083c6c7af71'
- gitalk_repo: 'demonljt.github.io'
- gitalk_owner: 'demonljt'
- gitalk_admin: 'demonljt'
- distractionFreeMode: true
  
 
 # MathJax 公式支持 by Ray-Eldath

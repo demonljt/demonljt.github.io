@@ -28,7 +28,6 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main rest
 # 预发布软件源，不建议启用
 # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-proposed main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-proposed main restricted universe multiverse
-{ color: black }
 ```
 
 安装nginx，php，mysql，可以一次性输入安装命令，这里不指定版本，因为软件更新的原因会有错误，需要注意的是需要关注安装软件的版本。

@@ -111,7 +111,7 @@
     </section>
     {% endif %}
   </section>
-
+    #{% include gitalk.html %}  //把&改成%,取消注释可开启gittalk
   {% include footer.html %}
 
   <script src="{{ "/assets/js/social-share.min.js" | relative_url }}"></script>
@@ -153,16 +153,15 @@
   {% if site.comments.gitalk %}
     <script>
         var gitalk = new Gitalk({
-              clientID: '{{ site.comments.gitalk_clientID }}',
-              clientSecret: '{{ site.comments.gitalk_Secret }}',
-              repo: '{{ site.comments.gitalk_repo }}',
-              owner: '{{ site.comments.gitalk_owner }}',
-              admin: '{{ site.comments.gitalk_admin }}',
+              clientID: '{{ b45ae3eac5990ebebd26 }}',
+              clientSecret: '{{ 6a2fae076e83420c2b94d735bf469083c6c7af71 }}',
+              repo: '{{ demonljt.github.io }}',
+              owner: '{{ demonljt }}',
+              admin: '{{ demonljt }}',
               id: location.pathname,      // Ensure uniqueness and length less than 50{{ page.title }}
-              distractionFreeMode: '{{ site.comments.distractionFreeMode }}'  // Facebook-like distraction free mode
+              distractionFreeMode: '{{ true }}'  // Facebook-like distraction free mode
             })
-
-            gitalk.render('disqus_thread')
+            gitalk.render('gitalk-container')
     </script>
   {% endif %}
 
