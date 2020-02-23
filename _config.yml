@@ -37,9 +37,10 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-
  gitalk: true
-
+ disqus: false
+ disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+ 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
