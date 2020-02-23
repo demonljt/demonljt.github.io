@@ -48,7 +48,22 @@
     </div>
     {% endif %}
   </div>
-
+  <section>
+    <div id="gitmentContainer"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+        owner: 'demonljt',
+        repo: 'demonljt.github.io',
+        oauth: {
+            client_id: '56fa8c4969ded8072ab3',
+            client_secret: 'b7cca5e7de2e37194f623542df1b56dadc36df1f',
+        },
+    });
+    gitment.render('gitmentContainer');
+    </script>
+  </section>
 
   <section class="author-detail">
     <section class="post-footer-item author-card">
