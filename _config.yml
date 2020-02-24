@@ -33,11 +33,11 @@ avatar: '/assets/img/profile.png'
 search: true
 
 # Night mode
-nightMode: true
+nightMode: false
 
 # Comments 评论功能
 comments:
-    gitalk: true 
+   gitalk: true 
 
  
 # MathJax 公式支持 by Ray-Eldath
