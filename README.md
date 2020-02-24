@@ -1,7 +1,7 @@
 ## DEMON's HOME
 
 这是我的个人博客托管，感谢大神的制作。 
-[欢迎参观小站！](http://demonlje.github.io)
+[欢迎参观小站！](http://demonljt.github.io)
 
     基于H2O主题制作，在原主题基础上增加了
     * 网站底部部件修改自己信息

@@ -48,6 +48,30 @@
     </div>
     {% endif %}
   </div>
+  
+  <section>
+    <!-- Gitalk 评论 start  -->
+    <!-- Link Gitalk 的支持文件  -->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+
+    <div id="gitalk-container"></div>
+        <script type="text/javascript">
+        var gitalk = new Gitalk({
+
+        // gitalk的主要参数
+            clientID: `d566b28205954c4c1ec5`,
+            clientSecret: `63e75ce565c2609f5ccc0f3f7ff5e685df1d3a7a`,
+            repo: `demonljt.github.io`,
+            owner: 'demonljt',
+            admin: ['demonljt'],
+            id: 'decodeURI(window.location.pathname)',
+        
+        });
+        gitalk.render('gitalk-container');
+    </script>
+    <!-- Gitalk end -->
+  </section>
 
   <section class="author-detail">
     <section class="post-footer-item author-card">
@@ -99,29 +123,7 @@
       </div>
       {% endif %}
     </section>
-    <section>
-      <!-- Gitalk 评论 start  -->
-      <!-- Link Gitalk 的支持文件  -->
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-      <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-  
-      <div id="gitalk-container"></div>
-          <script type="text/javascript">
-          var gitalk = new Gitalk({
-  
-          // gitalk的主要参数
-              clientID: `d566b28205954c4c1ec5`,
-              clientSecret: `63e75ce565c2609f5ccc0f3f7ff5e685df1d3a7a`,
-              repo: `demonljt.github.io`,
-              owner: 'demonljt',
-              admin: ['demonljt'],
-              id: 'decodeURI(window.location.pathname)',
-          
-          });
-          gitalk.render('gitalk-container');
-      </script>
-      <!-- Gitalk end -->
-    </section>>
+
   </section>
 
   
