@@ -22,6 +22,13 @@ tags: gitalk jekyll 博客 评论 历程
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
 ```
+为了防止网络问题，这里你也可以按以下方式引入其中分别打开上面对应文件的连接，<https://unpkg.com/gitalk/dist/gitalk.css>和<https://unpkg.com/gitalk@latest/dist/gitalk.min.js>应该是一堆代码，没关系，邮件保存后即可，按照下面的路径放入的博客原文档中。这种方式在依赖文件升级后你需要重新下载放置，除非你一直用这个版本。
+
+```HTML
+<link rel="stylesheet" href="/assets/css/gitalk.css">
+<script src="/assets/js/gitalk.min.js"></script>
+```
+
 将以下代码放置到需要显示评论插件的地方
 ```HTML
   <!-- Gitalk 评论 start  -->
