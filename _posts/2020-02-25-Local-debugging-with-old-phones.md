@@ -126,3 +126,5 @@ gems: [jekyll-paginate]
 
 修改以上问题后，如果看见了以下界面，那么恭喜你，在浏览器输入http://localhost:4000/即可看到的站点。之后就可以直接在旧手机上本地调试。  
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020022520510024.png) 
+
+欢迎大家到我的[CSDN](https://me.csdn.net/weixin_44235031)参观
