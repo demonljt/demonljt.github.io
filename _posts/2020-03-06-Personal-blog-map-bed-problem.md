@@ -2,13 +2,13 @@
 layout: post
 title: '个人博客图床问题解决方案'
 subtitle: '图床问题其实很简单'
-date: 2020-02-25
+date: 2020-03-26
 categories: 记录
 cover: 'https://cdn.pixabay.com/photo/2020/02/16/21/26/middle-east-4854847_960_720.jpg'
 tags: 个人博客 图床
 ---
 
-如果你的github无法加载图片且访问特别缓慢，或者在使用Github Desktop时总是提示Untrusted service，可以将以下加入你的host文件中
+
 
 # 关于个人博客的图片处理问题
 
