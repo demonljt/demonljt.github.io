@@ -23,7 +23,7 @@ layout: default
         {% for categorie in site.categories %}
         <li>
             <span class="tags-name" id="{{ categorie[0] }}">「{{ categorie[0] }}」</span>
-            {% for post in categories[1] %}
+            {% for post in categorie[1] %}
             <a class="tag-post" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
