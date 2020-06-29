@@ -14,17 +14,17 @@ layout: default
     <ul class="tags-list">
         <li>
         {% if site.recommend-categories and site.categories.size>0 %}
-            {% for categories in site.categories %}
-            <a href="#{{ categories[0] }}" class="categories">{{ categories[0]}}</a>
+            {% for categorie in site.categories %}
+            <a href="#{{ categorie[0] }}" class="tag">{{ categorie[0]}}</a>
             {% endfor %}
         {% endif %}
         </li>
         
-        {% for categories in site.categories %}
+        {% for categorie in site.categories %}
         <li>
-            <span class="tags-name" id="{{ categories[0] }}">「{{ categories[0] }}」</span>
+            <span class="tags-name" id="{{ categorie[0] }}">「{{ categorie[0] }}」</span>
             {% for post in categories[1] %}
-            <a class="categories-post" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
+            <a class="tag-post" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
         {% endfor%}
