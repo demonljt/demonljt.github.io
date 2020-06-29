@@ -1,3 +1,4 @@
+---
 layout: post
 title: '今夏无畏之我在2020毕业'
 subtitle: '愿作一常人，有闲有贤'
@@ -5,7 +6,7 @@ date: 2020-06-29
 categories: 文艺
 cover: 'https://c.pxhere.com/images/e2/13/dc224cf8fd2e9c4851f812493c67-1618683.jpg!d'
 tags: 外瑞斯 毕业
-
+---
 # 今夏无畏之我在2020毕业
 
 2020年是所有人都希望重启的一年
