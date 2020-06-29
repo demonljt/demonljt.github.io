@@ -5,13 +5,13 @@ layout: default
 
 {% include header.html %}
 
-<div class="g-banner categories-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
+<div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
     <h2>CATEGORIES</h2>
 </div>
 
 <main class="tags-content">
 
-    <ul class="categories-list">
+    <ul class="tags-list">
         <li>
         {% if site.recommend-categories and site.categories.size>0 %}
             {% for categories in site.categories %}
@@ -22,7 +22,7 @@ layout: default
         
         {% for categories in site.categories %}
         <li>
-            <span class="categories-name" id="{{ categories[0] }}">「{{ categories[0] }}」</span>
+            <span class="tags-name" id="{{ categories[0] }}">「{{ categories[0] }}」</span>
             {% for post in categories[1] %}
             <a class="categories-post" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
