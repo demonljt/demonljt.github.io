@@ -15,7 +15,7 @@ layout: default
         <li>
         {% if site.recommend-categories and site.categories.size>0 %}
             {% for categorie in site.categories %}      
-            <a href="#{{ categorie[0] }}" class="tag">{{ categorie[0]}}</a>
+            <a class="tag" href="#{{ categorie[0] }}" >{{ categorie[0]}}</a>
             {% endfor %}
         {% endif %}
         </li>       
